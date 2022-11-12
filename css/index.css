@@ -96,12 +96,22 @@ body{
     display: grid;
     align-items: center;
     grid-auto-flow: column;
+    grid-auto-columns: max-content;
     gap: 1.3em;
     padding: 20px 0;
+    color: var(--medium-gray);
+}
+
+.nav__parent:hover{
+    color: var(--almost-black);
 }
 
 .nav__link{
     text-decoration: none;
+    color: var(--medium-gray);
+}
+
+.nav__link:hover{
     color: var(--almost-black);
 }
 
@@ -111,10 +121,19 @@ body{
     text-align: center;
 }
 
+.nav__login:hover{
+    color: var(--almost-black);
+}
+
 .nav__login--border{
     border-radius: 1em;
     margin-top: 20px;
     border: 1px solid var(--medium-gray);
+}
+
+.nav__login--border:hover{
+    color: var(--almost-black);
+    border: 1px solid var(--almost-black);
 }
 
 .nav__sing{
@@ -122,4 +141,202 @@ body{
     color: var(--medium-gray);
     padding:  .7em 0;
     text-decoration: none;
+}
+
+.nav__sing:hover{
+    color: var(--almost-black);
+}
+
+.nav__illustration {
+    margin-right: 10px;
+}
+
+.nav__arrow--open{
+    transform: rotate(180deg);
+}
+
+/* Main */
+.main__grid{
+    overflow: hidden;
+    display: grid;
+    grid-auto-columns: 5% 1fr 5%;
+    grid-template-areas: 
+    "img img img"
+    ".   text  .";
+}
+
+.main__img{
+    width: 100%;
+}
+
+.main__article{
+    padding: 56px 0;
+    text-align: center;
+    grid-area: text;
+}
+
+.main__title{
+    font-size: 2rem;
+}
+
+.main__paragraph{
+    line-height: 2rem;
+    margin: 1.5em 0;
+}
+
+.main__cta{
+    background-color: var(--almost-black);
+    color: #fff;
+    display: inline-block;
+    padding: .8em 1.5em;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 2px solid white;
+}
+
+.main__cta:hover{
+    background-color: transparent;
+    border: 2px solid var(--almost-black);
+    color: var(--almost-black);
+}
+
+.main__picture{
+    grid-area: img;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.main__brands{
+    display: grid;
+    gap: 1em;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0 80px;
+}
+
+.main__brand{
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    .nav{
+        gap: 2em;
+        overflow: visible;
+        padding: 50px 0 0;
+    }
+
+    .nav__hamburguer{
+        display: none;
+    }
+
+    .nav__overlay{
+        position: unset;
+        background-color: transparent;
+        opacity: 1;
+        pointer-events: unset;
+        flex: 1;
+        margin-left: 20px;
+    }
+
+    .nav__menu{
+        position: unset;
+        width: 100%;
+        max-width: unset;
+        background-color: unset;
+        padding: 0;
+        overflow: unset;
+        display: flex;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .nav__item{
+        width: max-content;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .nav__inner{
+        position: absolute;
+        left: 0;
+        padding: 2em;
+        width: max-content;
+        background-color: #fff;
+        height: auto;
+        z-index: 1000;
+        border-radius: 10px;
+        box-shadow: 0 0 20px 3px rgb(0 0 0 / 15%);
+        transition: opacity .3s;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .nav__inner--show{
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+    .nav__login{
+        width: max-content;
+        margin: 0;
+        margin-left: auto;
+    }
+
+    .nav__login--border{
+        margin: 0;
+        padding: 0 1.5em;
+    }
+
+    .nav__parent{
+        gap: .3em;
+    }
+
+    .main__grid{
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 90%;
+        gap: 2em;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "text img";
+        padding: 40px 0 20px 7%;
+    }
+
+    .main__picture{
+        max-height: 500px;
+    }
+
+    .main__img{
+        height: 100%;
+    }
+
+    .main__article{
+        text-align: left;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__brands{
+        margin: auto 0 0 0;
+    }
+
+    .main__texts{
+        margin: auto 0;
+    }
+
+    .main__title{
+        font-size: 3.5em;
+        padding-right: 25%;
+    }
+
+    .main__paragraph{
+        margin: 2em 0;
+        color: var(--medium-gray);
+        line-height: 1.8em;
+        padding-right: 15%;
+    }
 }
