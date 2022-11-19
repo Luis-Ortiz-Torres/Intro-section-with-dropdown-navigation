@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Luis-Ortiz-Torres/Intro-section-with-dropdown-navigation)
-- Live Site URL: [Add live site URL here](https://luis-ortiz-torres.github.io/Intro-section-with-dropdown-navigation/)
+- Solution URL: [Solution URL here](https://github.com/Luis-Ortiz-Torres/Intro-section-with-dropdown-navigation)
+- Live Site URL: [Live site URL here](https://luis-ortiz-torres.github.io/Intro-section-with-dropdown-navigation/)
 
 ## My process
 
