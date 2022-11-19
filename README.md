@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/desktop-preview.jpg)
+![](https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto:good,w_900/Challenges/zp74vhrxan0bpg43z2uu.jpg)
 
 ### Links
 
