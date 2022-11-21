@@ -47,21 +47,24 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Mainly I learned how to make a responsive dropdown menu with html, css and javascript.  
+I also learned a bit about CSS Grid with areas to create layouts.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.main__grid{
+    display: grid;
+    grid-auto-columns: 5% 1fr 5%;
+    grid-template-areas: 
+    "img img img"
+    ".   text  .";
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+.main__article{
+    grid-area: text;
+}
+
+.main__picture{
+    grid-area: img;
 }
 ```
 
